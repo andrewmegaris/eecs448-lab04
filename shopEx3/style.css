@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+        padding: 15px;
+    text-align: left;
+}
+
+input {
+    color:#08233e;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:70%;
+    /* ... other rules ... */
+    cursor:pointer;
+    padding: 1px;
+}
+ 
+input:hover {
+    background-color:rgba(255,204,0,0.8);
+}

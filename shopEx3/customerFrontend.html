@@ -1,0 +1,29 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+	    <script type="text/javascript" src="formChecker.js"></script>
+        <title>Andrew Megaris Awesome Store!.com</title>
+    </head>
+    
+    <body>
+        <h1>Welcome To My Mega Awesome Store!</h1>    
+        <form action="customerBackend.php"  method="post" onsubmit ="return checkForm()" >
+            <table> 
+                <tr><th>Item Name</th><th>Item Cost</th><th>Quantity Desired</th></tr>
+                <tr><td>Headphones</td><td>$39.99</td><td><input type="number" min=0 id="feItemOneQuantity"></td></tr>
+                <tr><td>Bicycle</td><td>$100.01</td><td><input type="number" min=0 id="feItemTwoQuantity"></td></tr>
+                <tr><td>Eraser</td><td>$.78</td><td><input type="number" min=0 id="feItemThreeQuantity"></td></tr>
+            </table>
+            
+            <h3>Please Choose a Shipping Option</h3>
+            <input type="radio" name="shipping" value="free">Free 7 Day<br>
+            <input type="radio" name="shipping" value="overnight">$50.00 Overnight<br>
+            <input type="radio" name="shipping" value="threeDay">$5.00 Three Day<br>
+            Username: <input type="text" id="userNameInput" placeholder="must be valid email address"><br>
+            Password: <input type="text" id="userPasswordInput"><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
